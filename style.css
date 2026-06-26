@@ -1,0 +1,114 @@
+/* Reset e estrutura */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Cabeçalho */
+header.cabecalho {
+	padding: 15px 25px;
+	background: #ffcbee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a.cabecalho-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+h1 {
+	color: #fff;
+	font-size: 24px;
+}
+
+/* Corpo e espaço para footer fixo */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: #f5f2f2;
+	padding-bottom: 70px; /* reserva espaço para o footer fixo */
+}
+
+main {
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+	margin: 12px 0;
+	color: #333;
+}
+
+/* Grid de cartões */
+.grid-cartoes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.cartao {
+	width: 260px;
+	height: 220px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	cursor: pointer;
+	margin: 0 auto;
+	position: relative;
+}
+
+.cartao-face {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+	text-align: center;
+}
+
+.cartao-imagem {
+	max-height: 110px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.cartao-frente {
+	background: #fff;
+}
+
+.cartao-verso {
+	display: none;
+	background: #fff;
+}
+
+.cartao.flipped .cartao-frente {
+	display: none;
+}
+
+.cartao.flipped .cartao-verso {
+	display: flex;
+}
+
+/* Footer fixo */
+footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 60px;
+	background: #ffd2f5;
+	padding: 15px 25px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
