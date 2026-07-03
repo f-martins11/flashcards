@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Flashcards de Mitos e Verdades</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 	<header class="cabecalho">
 		<h1>Confere Aí</h1>
@@ -19,8 +17,8 @@
 	<main>
 		<h2>Descubra a verdade clicando no cartão</h2>
 
-		<section class="grid-cartoes">
-			<article class="cartao" tabindex="0">
+		<section class="deck-cartoes">
+			<article class="cartao is-active" tabindex="0" aria-hidden="false">
 				<div class="cartao-face cartao-frente">
 					<img src="gatnho.jpeg" alt="Gatinho" class="cartao-imagem">
 					<p>Gatos sempre caem de pé!</p>
@@ -31,7 +29,7 @@
 				</div>
 			</article>
 
-			<article class="cartao" tabindex="0">
+			<article class="cartao" tabindex="0" aria-hidden="true">
 				<div class="cartao-face cartao-frente">
 					<img src="cafe(1).jpeg" alt="Café" class="cartao-imagem">
 					<p>Café é ruim para a saúde!</p>
@@ -42,7 +40,7 @@
 				</div>
 			</article>
 
-			<article class="cartao" tabindex="0">
+			<article class="cartao" tabindex="0" aria-hidden="true">
 				<div class="cartao-face cartao-frente">
 					<img src="chocolate.jpeg" alt="Chocolate" class="cartao-imagem">
 					<p>Chocolate é ruim para os cães!</p>
@@ -53,7 +51,7 @@
 				</div>
 			</article>
 
-			<article class="cartao" tabindex="0">
+			<article class="cartao" tabindex="0" aria-hidden="true">
 				<div class="cartao-face cartao-frente">
 					<img src="sol.jpeg" alt="Sol" class="cartao-imagem">
 					<p>Ficar exposto ao sol é sempre saudável!</p>
@@ -63,6 +61,28 @@
 					<p>A exposição excessiva ao sol pode causar danos à pele e aumentar o risco de câncer.</p>
 				</div>
 			</article>
+
+			<article class="cartao" tabindex="0" aria-hidden="true">
+				<div class="cartao-face cartao-frente">
+					<img src="agua.jpeg" alt="Água" class="cartao-imagem">
+					<p>Beber muita água é sempre bom!</p>
+				</div>
+				<div class="cartao-face cartao-verso">
+					<img src="agua2.jpeg" alt="Água" class="cartao-imagem">
+					<p>O consumo excessivo de água pode levar à intoxicação por água, que é perigosa.</p>
+				</div>
+			</article>
+			
+			<article class="cartao" tabindex="0" aria-hidden="true">
+				<div class="cartao-face cartao-frente">
+					<img src="banana.jpeg" alt="Banana" class="cartao-imagem">
+					<p>Bananas são ruins para a saúde!</p>
+				</div>
+				<div class="cartao-face cartao-verso">
+					<img src="banana2.jpeg" alt="Banana" class="cartao-imagem">
+					<p>Bananas são uma boa fonte de potássio e fibras, sendo saudáveis quando consumidas com moderação.</p>
+				</div>
+			</article>
 		</section>
 	</main>
 
@@ -70,7 +90,6 @@
 		<p>Projeto feito por Fernanda J. Martins</p>
 	</footer>
 
+	<script src="script.js"></script>
 </body>
-
 </html>
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flashcards de Mitos e Verdades</title><link rel="stylesheet" href="style.css"></head><body><header class="cabecalho"><h1>Flashcards de Mitos e Verdades</h1><nav><a class="cabecalho-link" href="#">Início</a></nav></header><main><h2>Descubra a verdade clicando no cartão</h2><section class="grid-cartoes"><article class="cartao" tabindex="0"><div class="cartao-face cartao-frente"><img src="gatnho.jpeg" alt="Gatinho" class="cartao-imagem"><p>Gatos sempre caem de pé!</p></div><div class="cartao-face cartao-verso"><img src="gatnho2.jpeg" alt="Gatinho" class="cartao-imagem"><p>Gatos podem se machucar ao cair de grandes alturas.</p></div></article><article class="cartao" tabindex="0"><div class="cartao-face cartao-frente"><img src="cafe(1).jpeg" alt="Café" class="cartao-imagem"><p>Café é ruim para a saúde!</p></div><div class="cartao-face cartao-verso"><img src="cafe2.jpeg" alt="Café" class="cartao-imagem"><p>O consumo moderado de café pode ter benefícios para a saúde.</p></div></article><article class="cartao" tabindex="0"><div class="cartao-face cartao-frente"><img src="chocolate.jpeg" alt="Chocolate" class="cartao-imagem"><p>Chocolate é ruim para os cães!</p></div><div class="cartao-face cartao-verso"><img src="chocolate2.jpeg" alt="Chocolate" class="cartao-imagem"><p>O chocolate contém teobromina, que é tóxica para os cães.</p></div></article><article class="cartao" tabindex="0"><div class="cartao-face cartao-frente"><img src="sol.jpeg" alt="Sol" class="cartao-imagem"><p>Ficar exposto ao sol é sempre saudável!</p></div><div class("cartão")
